@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 # Base URL tanpa offset agar dapat digunakan dalam loop
-base_url = 'https://api-sscasn.bkn.go.id/2024/portal/spf?kode_ref_pend=5109751&offset='
+base_url = 'https://api-sscasn.bkn.go.id/2024/portal/spf?kode_ref_pend=5100943&pengadaan_kd=2&offset='
 
 # Headers, termasuk User-Agent yang diisi dengan informasi yang sesuai
 headers = {
@@ -21,7 +21,7 @@ offset = 0
 items_per_page = 10
 
 # Maksimal data yang diketahui (bisa disesuaikan)
-max_data = 2552
+max_data = 185
 
 while offset < max_data:
     url = f'{base_url}{offset}'
